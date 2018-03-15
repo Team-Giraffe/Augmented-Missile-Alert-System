@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!-- The title of tab of the website. -->
+    <title>Missile Alert System Augmentation</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <style>
+      .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-auto-rows: minmax(500px, auto);
+        grid-gap: 1em;
+        /* Horizontal Placement */
+        justify-items: stretch;
+        /* Vertical Placement */
+        align-items: stretch;
+      }
+      /* Make every div in wrapper with #eee color and with padding of 1em */
+      .wrapper > div{
+        background: lightgoldenrodyellow;
+      }
+      .box1 {
+        grid-column: 2/3;
+        border: 4px solid black;
+        text-align: center;
+      }
+      .box1 > div {
+        margin: 1em;
+        padding: .5em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="box box1">
+        <div style="border: 2px solid black">
+          <h1 style="color: red;">CONFIRM YOUR ALERT</h1>
+        </div>
+        <div style="background-color: black; text-align: left; padding-left: 1em;">
+          <h1 style="color: red;"><u>SEND THIS MESSAGE:</u></h1>
+          <h2 style="color: white;">EMERGENCY ALERT [Emergency Type] in this area.</h2>
+          <h2 style="color: white;">Take Shelter. Check Local News!</h2>
+        </div>
+        <div>
+          <h1 style="color: red; margin-top: 0px; margin-bottom: 0px;">TO ALL THE PEOPLE IN [LOCATION].</h1>
+        </div>
+        <div style="border: 2px solid black; padding: 0px">
+          <a style="text-decoration:none" href="checklist.html">
+            <h1 style="background-color: red; color: white; padding: 1em 0em 1em 0em; margin: 0px">SEND NOW</h1>
+          </a>
+        </div>
+        <div style="border: 2px solid black; padding: 0px">
+          <a style="text-decoration:none" href="#">
+            <h1 style="background-color: #eee; color: black; padding: 1em 0em 1em 0em; margin: 0px">GO BACK</h1>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
