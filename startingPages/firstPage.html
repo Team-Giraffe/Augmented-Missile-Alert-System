@@ -1,85 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
+  <!-- The title of tab of the website. -->
+  <title>Missile Alert System Augmentation</title>
+
   <meta charset="UTF-8">
-  <title>Starting Page</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <style>
+    .wrapper {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-auto-rows: minmax(500px, auto);
+      grid-gap: 1em;
+      /* Horizontal Placement */
+      justify-items: stretch;
+      /* Vertical Placement */
+      align-items: stretch;
+    }
+    /* Make every div in wrapper with #eee color and with padding of 1em */
+    .wrapper > div{
+      background: lightgoldenrodyellow;
+    }
+    .box1 {
+      grid-column: 2/3;
+      border: 4px solid black;
+      text-align: center;
+    }
+    .box1 > div {
+      margin: 1em;
+      padding: .5em;
+    }
+    .alarmBox {
+      display: grid;
+      grid-template-columns: 5fr 1fr;
+      grid-auto-rows: minmax(50px, auto);
+      text-align: left;
+      background-color: lightgrey;
+    }
+    button {
+      background-color: red;
+      color: white;
+      font-size: 1em;
+      border-radius: 5px;
+      border: 1px solid black;
+    }
+    .alarmBox > button {
+      margin: 5px;
+    }
+    .alarmBox > p {
+      color: black;
+    }
+    .startBox {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-auto-rows: minmax(50px, auto);
+      grid-gap: 1em;
+    }
+    .startBox > a {
+      border: 2px solid black;
+    }
+  </style>
 </head>
-
-<style>
-
-  h1 {
-    text-align: center;
-  }
-
-</style>
 <body>
-<div class="ui fluid container" style="background-color: lightgoldenrodyellow; width: 500px; height: auto">
-  <div class="centered fluid ui grid">
-
-    <div class="row">
-      <div class="ui grid container">
-        <div class="column">
-          <div style="border: 2px solid black">
-            <h1 style="color: red;">EMERGENCY ALERT SYSTEM</h1>
-          </div>
-        </div>
-      </div>
+<div class="wrapper">
+  <div class="box box1">
+    <div style="border: 2px solid black">
+      <h1 style="color: red;">EMERGENCY ALERT SYSTEM</h1>
     </div>
-
-    <div class="two column row">
-      <div class="column" style="background-color: greenyellow">
-        <div class="row">
-          <div class="column">
-            <div style="border: 2px solid black">
-              <h1 style="color: black;">TEST ALERT</h1>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="column">
-            <div style="border: 2px solid black">
-              <h2 style="font-size: large">FOLLOW THE STEPS BELLOW:</h2>
-              <h3>1. Obtain verbal command of a test run.</h3>
-              <h3>2. Ensure that all emergency departments acknowledge the drill.</h3>
-              <h3>3. Ensure that there are no emergencies occurring at the moment</h3>
-              <a href="../choosingPages/choose-medium.html">
-                <button class="large ui button" style="margin-bottom: 20px">
-                  SELECT TEST ALERT
-                </button>
-              </a>
-          </div>
-        </div>
-      </div>
+    <h1 style="padding-left: 20px; text-align: left"><u>Alarms:</u></h1>
+    <div style="border: 2px solid black" class="alarmBox">
+      <p>
+        TEST TSUNAMI SMS ALERT AT HAWAI`I.
+      </p>
+      <button>CANCEL</button>
     </div>
-
-    <div class="column" style="background-color: red">
-      <div class="row">
-        <div class="column">
-          <div style="border: 2px solid black">
-            <h1 style="color: black;">REAL ALERT</h1>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="column">
-          <div style="border: 2px solid black">
-            <h2 style="font-size: large">FOLLOW THE STEPS BELLOW:</h2>
-            <h3>1. Obtain verbal command and written confirmation of emergency.</h3>
-            <h3>2. Ensure that all emergency departments are aware of the current emergency.</h3>
-            <a href="../choosingPages/choose-medium.html">
-              <button class="large ui button" style="margin-bottom: 20px">
-                SELECT REAL ALERT
-              </button>
-            </a>
-          </div>
-        </div>
-      </div>
+    <div style="border: 2px solid black" class="alarmBox box2">
+      <p>
+        REAL EARTHQUAKE RADIO ALERT AT KAUA`I.
+      </p>
+      <button>CANCEL</button>
     </div>
-
+    <div style="border: 2px solid black" class="alarmBox box3">
+      <p>
+        TEST FLOOD SMS ALERT AT HAWAI`I.
+      </p>
+      <button>CANCEL</button>
+    </div>
+    <div style="border: 2px solid black" class="alarmBox box4">
+      <p>
+        REAL HURRICANE RADIO ALERT AT KAUA`I.
+      </p>
+      <button>CANCEL</button>
+    </div>
+    <div style="padding: 0px" class="startBox">
+      <a style="text-decoration:none" href="firstchecklistTEST.html">
+        <h1 style="background-color: greenyellow; color: black; padding: 1em 0em 1em 0em; margin: 0px">TEST ALARM</h1>
+      </a>
+      <a style="text-decoration:none" href="firstchecklistREAL.html">
+        <h1 style="background-color: red; color: white; padding: 1em 0em 1em 0em; margin: 0px">REAL ALARM</h1>
+      </a>
+    </div>
   </div>
-
-</div>
 </div>
 </body>
 </html>
