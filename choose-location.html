@@ -1,21 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
+  <!-- The title of tab of the website. -->
+  <title>Missile Alert System Augmentation</title>
+
   <meta charset="UTF-8">
-  <title>Choose alert location</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <style>
+    .wrapper {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-auto-rows: minmax(500px, auto);
+      grid-gap: 1em;
+      /* Horizontal Placement */
+      justify-items: stretch;
+      /* Vertical Placement */
+      align-items: stretch;
+    }
+    /* Make every div in wrapper with #eee color and with padding of 1em */
+    .wrapper > div{
+      background: lightgoldenrodyellow;
+    }
+    .box1 {
+      grid-column: 2/3;
+      border: 4px solid black;
+      text-align: center;
+    }
+    .box1 > div {
+      margin: 1em;
+      padding: .5em;
+    }
+    .steps {
+      display: grid;
+    }
+    input[type='checkbox'] {
+      -webkit-appearance:none;
+      width:30px;
+      height:30px;
+      background:white;
+      border-radius:5px;
+      border:2px solid #555;
+      margin-top: -5px;
+    }
+    input[type='checkbox']:checked {
+      background: #abd;
+    }
+    h3 {
+      margin: 0px;
+    }
+  </style>
 </head>
 <body>
-<h2>Choose alert location</h2>
-  <form>
-    <input type = "checkbox" name = "location" value = "state"> State-wide
-    <input type = "checkbox" name = "location" value = "hawaii"> Hawaii County
-    <input type = "checkbox" name = "location" value = "honolulu"> Honolulu County
-    <br>
-    <input type = "checkbox" name = "location" value = "kalawao"> Kalawao County
-    <input type = "checkbox" name = "location" value = "kauai"> Kaua'i County
-    <br>
-    <input type = "submit" name = "submit" value = "Continue"/>
-    <input type = "button" name = "return"  value = "Go back"/>
-  </form>
+<div class="wrapper">
+  <div class="box box1">
+    <div style="border: 2px solid black">
+      <h1 style="color: red;">CHOOSE LOCATION(S)</h1>
+    </div>
+
+    <div class="locations" style="text-align: left; color: black; margin-top: 0px; margin-bottom: 0px;">
+      <div>
+        <form>
+          <input style="float: right;" type="checkbox" name="location" value="state"><h3>State-wide</h3><br>
+          <input style="float: right;" type="checkbox" name="location" value="hawaii"><h3>Hawaii County</h3><br>
+          <input style="float: right;" type="checkbox" name="location" value="honolulu"><h3>Honolulu County</h3><br>
+          <input style="float: right;" type="checkbox" name="location" value="kalawao"><h3>Kalawao County</h3><br>
+          <input style="float: right;" type="checkbox" name="location" value="kauai"><h3>Kaua'i County</h3><br>
+
+        </form>
+      </div>
+    </div>
+    <div style="border: 2px solid black; padding: 0px">
+      <a style="text-decoration:none" href="checklist.html">
+        <h1 style="background-color: red; color: white; padding: 1em 0em 1em 0em; margin: 0px">CONFIRM</h1>
+      </a>
+    </div>
+    <div style="border: 2px solid black; padding: 0px">
+      <a style="text-decoration:none" href="choose-emergency.html">
+        <h1 style="background-color: #eee; color: black; padding: 1em 0em 1em 0em; margin: 0px">GO BACK</h1>
+      </a>
+    </div>
+  </div>
+</div>
 </body>
 </html>
