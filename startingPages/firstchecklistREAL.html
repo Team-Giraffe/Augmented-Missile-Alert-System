@@ -51,6 +51,29 @@
     h3 {
       margin: 0px;
     }
+    h3 {
+      margin: 0px;
+    }
+    input[type=submit] {
+      -webkit-appearance: none;
+      width:652px;
+      height:101px;
+      background-color: red;
+      color: white;
+      margin-bottom: .5em;
+      marign-top: 1em;
+      font-size: 2em;
+      font-family: "Times New Roman";
+      font-weight: bold;
+      border: 2px solid black;
+    }
+    #back {
+      text-align: center;
+      background-color: #eee;
+      color: black;
+      padding: 1em 0em 1em 0em;
+      margin: 0;
+    }
   </style>
 </head>
 <body>
@@ -63,10 +86,21 @@
     <div class="steps" style="text-align: left; color: black; margin-top: 0px; margin-bottom: 0px;">
       <div>
         <h2><u>FOLLOW THE STEPS BELOW:</u></h2>
-        <form>
-          <input style="float: right;" type="checkbox" name="step1" value="1"><h3>1. Obtain verbal command and written confirmation of an emergency.</h3><br>
-          <input style="float: right;" type="checkbox" name="step2" value="2"><h3>2. Ensure that all emergency departments are aware of the current emergency.</h3><br>
+        <form action="../choosingPages/choose-medium.html">
+          <input style="float: right;" type="checkbox" name="step1" value="1" id="step1"><h3>1. Obtain verbal command and written confirmation of an emergency.</h3><br>
+          <input style="float: right;" type="checkbox" name="step2" value="2" id="step2"><h3>2. Ensure that all emergency departments are aware of the current emergency.</h3><br>
+          <input type="submit" value="CONTINUE">
+          <div style="border: 2px solid black; padding: 0px">
+            <a style="margin-top: 5px; text-decoration:none" href="firstPage.html">
+              <h1 id="back">GO BACK</h1>
+            </a>
+          </div>
         </form>
+        <script>
+          document.getElementById("step1").required = true;
+          document.getElementById("step2").required = true;
+          document.getElementById("step3").required = true;
+        </script>
       </div>
     </div>
     <div style="border: 2px solid black; padding: 0px">

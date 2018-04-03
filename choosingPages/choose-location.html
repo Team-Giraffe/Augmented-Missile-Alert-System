@@ -51,6 +51,26 @@
     h3 {
       margin: 0px;
     }
+    input[type=submit] {
+      -webkit-appearance: none;
+      width:652px;
+      height:101px;
+      background-color: red;
+      color: white;
+      margin-bottom: .5em;
+      marign-top: 1em;
+      font-size: 2em;
+      font-family: "Times New Roman";
+      font-weight: bold;
+      border: 2px solid black;
+    }
+    #back {
+      text-align: center;
+      background-color: #eee;
+      color: black;
+      padding: 1em 0em 1em 0em;
+      margin: 0;
+    }
   </style>
 </head>
 <body>
@@ -62,25 +82,20 @@
 
     <div class="locations" style="text-align: left; color: black; margin-top: 0px; margin-bottom: 0px;">
       <div>
-        <form>
+        <form action="../confirmationPages/checklist.html">
           <input style="float: right;" type="checkbox" name="location" value="state"><h3>State-wide</h3><br>
           <input style="float: right;" type="checkbox" name="location" value="hawaii"><h3>Hawaii County</h3><br>
           <input style="float: right;" type="checkbox" name="location" value="honolulu"><h3>Honolulu County</h3><br>
           <input style="float: right;" type="checkbox" name="location" value="kalawao"><h3>Kalawao County</h3><br>
           <input style="float: right;" type="checkbox" name="location" value="kauai"><h3>Kaua'i County</h3><br>
-
+          <input type="submit" value="CONTINUE">
+          <div style="border: 2px solid black; padding: 0px">
+            <a style="margin-top: 5px; text-decoration:none" href="choose-emergency.html">
+              <h1 id="back">GO BACK</h1>
+            </a>
+          </div>
         </form>
       </div>
-    </div>
-    <div style="border: 2px solid black; padding: 0px">
-      <a style="text-decoration:none" href="../confirmationPages/checklist.html">
-        <h1 style="background-color: red; color: white; padding: 1em 0em 1em 0em; margin: 0px">CONFIRM</h1>
-      </a>
-    </div>
-    <div style="border: 2px solid black; padding: 0px">
-      <a style="text-decoration:none" href="choose-emergency.html">
-        <h1 style="background-color: #eee; color: black; padding: 1em 0em 1em 0em; margin: 0px">GO BACK</h1>
-      </a>
     </div>
   </div>
 </div>
