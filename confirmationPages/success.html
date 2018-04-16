@@ -54,25 +54,11 @@
 <div class="wrapper">
   <div class="box box1">
     <div>
-      <h1 id="countdown"></h1>
-      <progress value="0" max="10" id="progressBar"></progress>
-      <script>
-        var timeleft = 11;
-        var downloadTimer = setInterval(function(){
-          document.getElementById("progressBar").value = 10 - --timeleft;
-          document.getElementById("countdown").innerHTML = timeleft;
-          if(timeleft <= 0) {
-            document.getElementById("countdown").innerHTML = "SUCCESSFULLY SENT ALERT";
-            document.getElementById("done").innerHTML = "GO BACK TO BEGINNING";
-            document.getElementById("doneA").href = "../startingPages/firstPage.html";
-            this.document.location.href = "send.php";
-          }
-        }, 1000);
-      </script>
+      <h1>SUCCESSFULLY SENT ALERT</h1>
     </div>
     <div style="border: 2px solid black; padding: 0px">
       <a style="text-decoration:none" href="confirmation.html" id="doneA">
-        <h1 id="done" style="background-color: red; color: white; padding: 1em 0em 1em 0em; margin: 0px">ABORT</h1>
+        <h1 id="done" style="background-color: red; color: white; padding: 1em 0em 1em 0em; margin: 0px">GO BACK TO BEGINNING</h1>
       </a>
     </div>
   </div>
