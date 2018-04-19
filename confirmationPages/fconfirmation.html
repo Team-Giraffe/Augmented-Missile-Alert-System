@@ -20,31 +20,37 @@
       /* Vertical Placement */
       align-items: stretch;
     }
+
     /* Make every div in wrapper with #eee color and with padding of 1em */
-    .wrapper > div{
+    .wrapper > div {
       background: lightgoldenrodyellow;
     }
+
     .box1 {
       grid-column: 2/3;
       border: 4px solid black;
       text-align: center;
     }
+
     .box1 > div {
       margin: 1em;
       padding: .5em;
     }
+
     input[type='checkbox'] {
-      -webkit-appearance:none;
-      width:30px;
-      height:30px;
-      background:white;
-      border-radius:5px;
-      border:2px solid #555;
+      -webkit-appearance: none;
+      width: 30px;
+      height: 30px;
+      background: white;
+      border-radius: 5px;
+      border: 2px solid #555;
       margin-top: -5px;
     }
+
     input[type='checkbox']:checked {
       background: #abd;
     }
+
     h3 {
       margin: 0px;
     }
@@ -58,10 +64,10 @@
       <progress value="0" max="10" id="progressBar"></progress>
       <script>
         var timeleft = 11;
-        var downloadTimer = setInterval(function(){
+        var downloadTimer = setInterval(function () {
           document.getElementById("progressBar").value = 10 - --timeleft;
           document.getElementById("countdown").innerHTML = timeleft;
-          if(timeleft <= 0) {
+          if (timeleft <= 0) {
             document.getElementById("countdown").innerHTML = "SUCCESSFULLY SENT ALERT";
             document.getElementById("done").innerHTML = "GO BACK TO BEGINNING";
             document.getElementById("doneA").href = "../startingPages/firstPage.html";

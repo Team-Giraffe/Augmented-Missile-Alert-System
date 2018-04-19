@@ -20,19 +20,23 @@
       /* Vertical Placement */
       align-items: stretch;
     }
+
     /* Make every div in wrapper with #eee color and with padding of 1em */
-    .wrapper > div{
+    .wrapper > div {
       background: lightgoldenrodyellow;
     }
+
     .box1 {
       grid-column: 2/3;
       border: 4px solid black;
       text-align: center;
     }
+
     .box1 > div {
       margin: 1em;
       padding: .5em;
     }
+
     .alarmBox {
       display: grid;
       grid-template-columns: 5fr 1fr;
@@ -40,6 +44,7 @@
       text-align: left;
       background-color: lightgrey;
     }
+
     button {
       background-color: red;
       color: white;
@@ -47,18 +52,22 @@
       border-radius: 5px;
       border: 1px solid black;
     }
+
     .alarmBox > button {
       margin: 5px;
     }
+
     .alarmBox > p {
       color: black;
     }
+
     .startBox {
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-auto-rows: minmax(50px, auto);
       grid-gap: 1em;
     }
+
     .startBox > a {
       border: 2px solid black;
     }

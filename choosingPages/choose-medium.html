@@ -20,41 +20,49 @@
       /* Vertical Placement */
       align-items: stretch;
     }
+
     /* Make every div in wrapper with #eee color and with padding of 1em */
-    .wrapper > div{
+    .wrapper > div {
       background: lightgoldenrodyellow;
     }
+
     .box1 {
       grid-column: 2/3;
       border: 4px solid black;
       text-align: center;
     }
+
     .box1 > div {
       margin: 1em;
       padding: .5em;
     }
+
     .steps {
       display: grid;
     }
+
     input[type='checkbox'] {
-      -webkit-appearance:none;
-      width:30px;
-      height:30px;
-      background:white;
-      border-radius:5px;
-      border:2px solid #555;
+      -webkit-appearance: none;
+      width: 30px;
+      height: 30px;
+      background: white;
+      border-radius: 5px;
+      border: 2px solid #555;
       margin-top: -5px;
     }
+
     input[type='checkbox']:checked {
       background: #abd;
     }
+
     h3 {
       margin: 0px;
     }
+
     input[type=submit] {
       -webkit-appearance: none;
-      width:652px;
-      height:101px;
+      width: 652px;
+      height: 101px;
       background-color: red;
       color: white;
       margin-bottom: .5em;
@@ -64,6 +72,7 @@
       font-weight: bold;
       border: 2px solid black;
     }
+
     #back {
       text-align: center;
       background-color: #eee;
@@ -83,11 +92,16 @@
     <div class="media" style="text-align: left; color: black; margin-top: 0px; margin-bottom: 0px;">
       <div>
         <form action="choose-emergency.html">
-          <input style="float: right;" type="checkbox" name="medium" value="siren"><h3>Siren</h3><br>
-          <input style="float: right;" type="checkbox" name="medium" value="911"><h3>Reverse 911</h3><br>
-          <input style="float: right;" type="checkbox" name="medium" value="sms"><h3>SMS (Text Message)</h3><br>
-          <input style="float: right;" type="checkbox" name="medium" value="email"><h3>Email</h3><br>
-          <input style="float: right;" type="checkbox" name="medium" value="eas"><h3>EAS</h3><br>
+          <input style="float: right;" type="checkbox" name="medium" value="siren">
+          <h3>Siren</h3><br>
+          <input style="float: right;" type="checkbox" name="medium" value="911">
+          <h3>Reverse 911</h3><br>
+          <input style="float: right;" type="checkbox" name="medium" value="sms">
+          <h3>SMS (Text Message)</h3><br>
+          <input style="float: right;" type="checkbox" name="medium" value="email">
+          <h3>Email</h3><br>
+          <input style="float: right;" type="checkbox" name="medium" value="eas">
+          <h3>EAS</h3><br>
           <input type="submit" value="CONTINUE">
           <div style="border: 2px solid black; padding: 0px">
             <a style="margin-top: 5px; text-decoration:none" href="../startingPages/firstPage.html">
