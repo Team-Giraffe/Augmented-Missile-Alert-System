@@ -1,10 +1,5 @@
-Username: Yujin
-Password: Kim
-Date logged in: 04/16/2018
-Time logged in: 22:17:42
-----------------------------------------------
-Username: a
-Password: s
-Date logged in: 04/16/2018
-Time logged in: 23:25:11
+Username: kiank
+Password: h
+Date logged in: 04/22/2018
+Time logged in: 0:47:46
 ----------------------------------------------
